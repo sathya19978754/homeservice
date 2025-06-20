@@ -1,0 +1,210 @@
+Here is your **final updated Replit prompt** with all your latest requests, including:
+
+* 📁 Using layout reference from the **image in your zip file**
+* 🪞 Building **mirror layout** based on that image
+* 📂 Mention of **three folders (css, js, img)** for proper file structure
+* 🖼 Use of **provided icons and layout image** for design accuracy
+
+---
+
+## 🔧 Prompt Title:
+
+**Home Services App – Responsive Website (Login + Contact + Popup) – Mirror Layout Build**
+
+---
+
+## 🎯 Objective:
+
+Build a **responsive front-end service website** for a **Home Services App** based on the **mirror layout image** (provided inside your zip file). The website includes:
+
+* 🏠 Home page with navbar, cards, contact, popup
+* 🔐 Login page with image + form
+* 📩 Contact section with styled details
+* 📅 Booking popup with 5 services
+
+---
+
+## 🧱 Folder & File Structure (as in your Zip):
+
+```
+service-app/
+│
+├── index.html              ← Home page (main layout)
+├── login.html              ← Login page
+├── assets/
+│   ├── css/
+│   │   └── style.css       ← All styles go here
+│   ├── js/
+│   │   └── script.js       ← JS for toggle, popup, redirect
+│   └── img/
+│       ├── layout.png      ← Reference layout image (mirror this layout)
+│       ├── logo.png
+│       ├── login-left.png
+│       ├── contact-icon.png
+│       └── popup-icons/
+│           ├── general-cleaning.png
+│           ├── ac-cleaning.png
+│           ├── home-salon.png
+│           ├── handyman.png
+│           └── healthcare.png
+```
+
+---
+
+## 🖼 Design Reference:
+
+* **IMPORTANT**: The full layout of the site should be created as a **mirror copy of the layout image inside the zip file**
+* Use the icons in `img/popup-icons/` for the popup service section
+* Fonts, colors, spacing, and alignment should match that layout
+
+---
+
+## 🎨 Design Guide:
+
+### 🖌 Color Scheme:
+
+| Element       | Color Code                  |
+| ------------- | --------------------------- |
+| Background    | `#263238` (Dark Gray-Black) |
+| Primary Color | `#0756A4` (Blue)            |
+| Accent/Alert  | `#FF7043` (Orange)          |
+| Highlight/CTA | `#FBC129` (Yellow)          |
+
+### 🔤 Font:
+
+* Use Google Font: [Belanosima](https://fonts.google.com/specimen/Belanosima)
+
+---
+
+## 🧩 Layout Breakdown:
+
+### ✅ A. Navbar (Fixed Top)
+
+| Section | Content                                              |
+| ------- | ---------------------------------------------------- |
+| Logo    | “Home Services” + House icon                         |
+| Center  | Search bar                                           |
+| Right   | Contact Icon → Scrolls to contact section            |
+|         | Book Icon → Opens popup of services                  |
+|         | Login Icon → Redirects to `login.html`               |
+| Effects | Hover grow/shadow, icons in white or yellow on hover |
+
+---
+
+### ✅ B. Home Page (`index.html`)
+
+#### Section 1: Banner / Hero (Optional)
+
+* You can use a banner or colored header bar to introduce the site
+
+#### Section 2: Why Choose Us (3 Bootstrap Cards)
+
+* Cards: ⭐ Top Rated, 🛠️ Same-day, ✅ Trusted Quality
+* Hover effect: card shadow, slight grow
+
+#### Section 3: Contact Section (as per layout image)
+
+* Styled border box with:
+
+  * 📍 Location
+  * 📧 Email
+  * 📞 Phone numbers
+* Use icons from provided folder
+* Match alignment & spacing from layout image
+
+#### Section 4: Book Services Popup (Triggered by Book icon)
+
+* Modal-style or fixed overlay popup
+* Display 5 services as **circular icons**:
+
+  * General Cleaning
+  * AC Cleaning
+  * Home Salon
+  * Handyman
+  * Healthcare
+* Hover effect on icons (scale or shadow)
+* Refer to layout image for spacing
+
+---
+
+### ✅ C. Login Page (`login.html`)
+
+| Part       | Content                                                             |
+| ---------- | ------------------------------------------------------------------- |
+| Left Side  | Display image (`login-left.png`) with grid style (as per zip image) |
+| Right Side | Login Form:                                                         |
+
+* Email field
+* Password field with **eye icon toggle**
+* Login button
+* Signup link |
+  \| Responsive  | Stack vertically on mobile |
+  \| Fonts/Color | Follow style guide |
+
+---
+
+## 🧠 JavaScript Interactions (`script.js`):
+
+| Feature               | Description                                                                    |
+| --------------------- | ------------------------------------------------------------------------------ |
+| 🔓 Show/Hide Password | Toggle eye icon in login page                                                  |
+| 📅 Popup Services     | Toggle popup on book icon click                                                |
+| 🧭 Page Navigation    | Redirect login icon → `login.html`<br>Contact icon → scroll to contact section |
+| ⚠ Alert (Optional)    | Alert if login fields are empty                                                |
+
+---
+
+## 📱 Responsive Behavior:
+
+| Element    | Behavior                      |
+| ---------- | ----------------------------- |
+| Navbar     | Bootstrap collapse if needed  |
+| Cards      | Responsive grid               |
+| Popup      | Stays centered, scrollable    |
+| Login Page | 2-column → 1-column on mobile |
+
+---
+
+## 📦 Deliverables Summary:
+
+| File                   | Purpose                  |
+| ---------------------- | ------------------------ |
+| `index.html`           | Home page layout         |
+| `login.html`           | Login page (grid + form) |
+| `assets/css/style.css` | Custom styles            |
+| `assets/js/script.js`  | Popup + toggle logic     |
+| `assets/img/`          | Logo, icons, layout ref  |
+
+---
+
+## 🧪 Testing Instructions:
+
+* 🧭 Check all icons and buttons
+* 📱 Resize window to confirm responsive layout
+* 🖱️ Hover over cards/icons to verify effects
+* 🔐 Check password toggle and popup working
+* 📷 Confirm your layout **matches the provided image (mirror style)**
+
+---
+
+## ✅ Completion Checklist:
+
+| Task                        | Status |
+| --------------------------- | ------ |
+| Mirror layout implemented   | ✅      |
+| All icons used correctly    | ✅      |
+| Popup works with 5 services | ✅      |
+| Contact section styled      | ✅      |
+| Login form grid layout      | ✅      |
+| Folder structure maintained | ✅      |
+| Fully responsive            | ✅      |
+| JS logic implemented        | ✅      |
+
+---
+
+Let me know if you'd like:
+
+* 🔽 This prompt in **PDF or .txt**
+* 📤 Final **Replit link or ZIP upload**
+
+You're all set, macha! 🔥💻

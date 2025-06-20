@@ -1,0 +1,152 @@
+ 1. Prompt Title:
+Home Services App - Responsive Website with Login System
+
+🎯 2. Project Objective:
+Build a professional-looking responsive website for a Home Services company, where users can:
+
+View service benefits
+
+Contact for booking
+
+Login or register
+
+Browse easily on mobile or desktop
+
+🧰 3. Technology Stack:
+Use only the following:
+
+Tech	Usage
+✅ HTML	Structure
+✅ CSS	Styling
+✅ Bootstrap 5	Layout & responsiveness
+✅ JavaScript (Basic)	Interactivity (login, show/hide password, hover, etc.)
+✅ Images & Icons	From asset folders or online
+❌ No backend required	(Static only)
+
+🗂 4. File/Folder Structure:
+css
+Copy
+Edit
+home-services-app/
+│
+├── index.html
+├── login.html
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   └── img/
+│       ├── login-image.png
+│       ├── features-img-1.png
+│       ├── features-img-2.png
+│       └── ...
+🧩 5. Page Layout Requirements (By Screenshots You Sent)
+✅ A. Navbar:
+Logo: Home Services with a house icon
+
+Search bar
+
+Icons:
+
+📞 Contact
+
+📅 Book
+
+🔐 Login
+
+Use Bootstrap grid/flex for alignment
+
+Hover effect on icons
+
+✅ B. Login Page (login.html):
+Left Side: Illustration (image grid you uploaded)
+
+Right Side: Login form
+
+Input fields for Email & Password
+
+"Show/Hide" eye icon for password
+
+Sign In button
+
+Sign Up link
+
+Bootstrap cards + form + image grid
+
+✅ C. Home Page (index.html):
+Header (Navbar)
+
+Section: “Why Choose Us?”
+
+3 Cards:
+
+⭐ Top Rated Professionals
+
+🚀 Same-day Availability
+
+✅ Top Quality Services
+
+Each card has:
+
+Icon/image on top
+
+Heading
+
+Short description
+
+Hover effects using CSS (e.g., box-shadow or scale)
+
+✅ D. Footer:
+Contact Info
+
+Quick Links (About Us, Book Now, Services)
+
+Social Media Icons (optional)
+
+Simple copyright
+
+💡 6. Functional Requirements (via JavaScript)
+Feature	Description
+✅ Password toggle	Show/hide password icon on login
+✅ Hover effects	Add subtle animations for cards
+✅ Responsive design	Works on mobile, tablet, desktop
+✅ JS Form Validation (Optional)	Alert for empty login fields
+
+📐 7. Design & Responsiveness
+Requirement	Use
+Bootstrap Grid	row, col-md-*, container
+Buttons	btn btn-primary, btn-outline-*
+Cards	card, card-body, hover with CSS
+Text	Google Fonts (if required), Bootstrap headings
+Responsive	Mobile-first using Bootstrap
+
+✅ 8. Completion Checklist (before submit)
+Task	Done?
+Navbar with logo & icons	✅
+Responsive login page	✅
+Cards with hover effects	✅
+Section: Why Home Services	✅
+Image support	✅
+JS toggle password	✅
+Proper folder structure	✅
+Working links (Login, Sign Up)	✅
+Clean UI with no broken elements	✅
+
+📝 Bonus / Add-ons (Optional)
+Dark mode switch
+
+Contact form with alert()
+
+Back to top button
+
+Loader animation on login
+
+🧪 How to Test Before Submission:
+Open in Replit (Desktop + Mobile preview)
+
+Check all links, hover effects, responsiveness
+
+Try different screen sizes
+
+Validate your HTML and CSS (optional)

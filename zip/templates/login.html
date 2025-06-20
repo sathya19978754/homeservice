@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Home Services App</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Font - Belanosima -->
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="login-body">
+    <!-- Flash Messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-messages">
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ 'danger' if category == 'error' else category }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+
+    <div class="login-container">
+        <div class="row h-100 g-0">
+            <!-- Left Side - Image Grid -->
+            <div class="col-lg-6 login-left">
+                <div class="image-grid">
+                    <div class="grid-item grid-1">
+                        <img src="https://pixabay.com/get/g2dfd3c54556d5139943d37c82cb4015b1cf49642117b2372eb2a7aaef19891c3120fd64aa00af2406ae185a629039d03ccaa4a8b0d1664047be6ba4db2604832_1280.jpg" alt="Professional Service" class="grid-image">
+                    </div>
+                    <div class="grid-item grid-2">
+                        <img src="https://pixabay.com/get/g5256f38f3d26eac34ebc858a1e5bb695b793de4ca7491fefd9cfa000bb08a14e8b57af1c5653378ec82a231b24120e1d1286fc92e58e3dddb8fddc62bc0e5416_1280.jpg" alt="Home Maintenance" class="grid-image">
+                    </div>
+                    <div class="grid-item grid-3">
+                        <img src="https://pixabay.com/get/g2c72f4a6f2f13f25e8e8d5d422caab5c769ed72e8b96aeab1c8ba326a2f18aaa42758e401e0d216ab679bc86d4ccda0951a42cdd400e80913a974b38bb8f0aa7_1280.jpg" alt="Cleaning Service" class="grid-image">
+                    </div>
+                    <div class="grid-item grid-4">
+                        <img src="https://pixabay.com/get/g83f76ee2c03b05fd9ff84a2c9a63e7780b6fd8e2c5df066a81c48b446ebda535b9828184a280b7070789151cdb85427b81fe5ee3b5a882d38b4c8980c90b7366_1280.jpg" alt="Professional Worker" class="grid-image">
+                    </div>
+                </div>
+                <div class="login-overlay">
+                    <h2>Welcome Back!</h2>
+                    <p>Your trusted home services await</p>
+                </div>
+            </div>
+            
+            <!-- Right Side - Login Form -->
+            <div class="col-lg-6 login-right">
+                <div class="login-form-container">
+                    <div class="login-header">
+                        <a href="{{ url_for('index') }}" class="back-link">
+                            <i class="fas fa-arrow-left"></i> Back to Home
+                        </a>
+                        <h1 class="login-title">
+                            <i class="fas fa-home me-2"></i>
+                            Home Services
+                        </h1>
+                        <p class="login-subtitle">Sign in to your account</p>
+                    </div>
+                    
+                    <form class="login-form" method="POST" action="{{ url_for('login') }}">
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                                <input type="email" class="form-control" id="email" name="email" 
+                                       placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password" class="form-label">Password</label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                                <input type="password" class="form-control" id="password" name="password" 
+                                       placeholder="Enter your password" required>
+                                <button class="btn btn-outline-secondary password-toggle" type="button" 
+                                        onclick="togglePassword()">
+                                    <i class="fas fa-eye" id="passwordToggleIcon"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-options">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">
+                                    Remember me
+                                </label>
+                            </div>
+                            <a href="#" class="forgot-password">Forgot password?</a>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-login">
+                            <i class="fas fa-sign-in-alt me-2"></i>
+                            Sign In
+                        </button>
+                        
+                        <div class="signup-link">
+                            <p>Don't have an account? <a href="#" class="text-primary">Sign up</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
